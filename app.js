@@ -27,11 +27,14 @@ function roll() {
 }
 
 btn.addEventListener("click", function () {
+    side.classList.remove("result", "result-one");
     let rollTime = setInterval(roll, 100);
     setTimeout(() => {
         clearTimeout(rollTime);
+        if (dice.src.match("1.gif")) {
+            side.classList.toggle("result-one");
+        }
         side.classList.toggle("result");
     }, 1500);
-    side.classList.remove("result");
 });
 
