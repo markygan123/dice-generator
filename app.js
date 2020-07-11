@@ -30,5 +30,8 @@ btn.addEventListener("click", function () {
     let rollTime = setInterval(roll, 100);
     setTimeout(() => {
         clearTimeout(rollTime);
-    }, 2000);
+        side.classList.toggle("result");
+    }, 1500);
+    side.classList.remove("result");
 });
+
