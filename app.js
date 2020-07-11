@@ -32,9 +32,10 @@ btn.addEventListener("click", function () {
     setTimeout(() => {
         clearTimeout(rollTime);
         if (dice.src.match("1.gif")) {
-            side.classList.toggle("result-one");
+            dice.src = "images/1-result.jpg";
+        } else {
+            side.classList.toggle("result");
         }
-        side.classList.toggle("result");
     }, 1500);
 });
 
