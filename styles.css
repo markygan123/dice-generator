@@ -54,5 +54,9 @@ img {
 }
 
 .result {
-    box-shadow: 0px 0px 30px 0px #fc9003;
+    box-shadow: 0px 0px 50px 0px #fc9003;
+}
+
+.result-one {
+    box-shadow: 0px 0px 30px 0px #ff0000;
 }
