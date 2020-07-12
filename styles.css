@@ -53,6 +53,10 @@ button:hover {
     cursor: pointer;
 }
 
+button:active {
+    transform: scale(0.9);
+}
+
 img {
     position: absolute;
     left: -2px;
