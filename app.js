@@ -33,6 +33,7 @@ btn.addEventListener("click", function () {
         clearTimeout(rollTime);
         if (dice.src.match("1.gif")) {
             dice.src = "images/1-result.jpg";
+            side.classList.toggle("result-one");
         } else {
             side.classList.toggle("result");
         }
