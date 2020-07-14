@@ -67,10 +67,14 @@ img {
 
 .result {
     box-shadow: 0px 0px 50px 0px #f39237;
-    transition: 0.3s all ease;
 }
 
 .result-one {
     box-shadow: 0px 0px 30px 0px #ff0000;
+}
+
+.result,
+.result-one,
+button {
     transition: 0.3s all ease;
 }
