@@ -16,11 +16,11 @@ let showDice = () =>  {
 
 let diceRollSound = () => {
     sound.play();
+    sound.currentTime = 0;
 }
 
 let rollDice = btn.addEventListener("click", () => {
     let rollTime = setInterval(showDice, 100);
-    sound.currentTime = 0;
 
     side.classList.remove("result", "result-one");
     diceRollSound();
