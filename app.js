@@ -32,7 +32,7 @@ let rollDice = btn.addEventListener("click", () => {
         } else {
             side.classList.toggle("result");
         }
-    }, 1500);
+    }, 850);
 });
 
 rollDice();
