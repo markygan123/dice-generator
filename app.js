@@ -1,6 +1,7 @@
 const side = document.querySelector(".side");
 const btn = document.querySelector("button");
 let dice = document.createElement("img");
+let sound = new Audio("audio/rollsound.mp3");
 
 
 let getRandomNumber = () => {
@@ -14,16 +15,15 @@ let showDice = () =>  {
 }
 
 let diceRollSound = () => {
-    let sound = new Audio();
-    sound.src = "audio/rollsound.mp3";
     sound.play();
 }
 
 let rollDice = btn.addEventListener("click", () => {
     let rollTime = setInterval(showDice, 100);
+    sound.currentTime = 0;
 
-    diceRollSound();
     side.classList.remove("result", "result-one");
+    diceRollSound();
     setTimeout(() => {
         clearTimeout(rollTime);
         if (dice.src.match("1.gif")) {
