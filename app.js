@@ -13,9 +13,17 @@ let showDice = () =>  {
     side.appendChild(dice);
 }
 
+let diceRollSound = () => {
+    let sound = new Audio();
+    sound.src = "audio/rollsound.mp3";
+    sound.play();
+}
+
 let rollDice = btn.addEventListener("click", () => {
-    side.classList.remove("result", "result-one");
     let rollTime = setInterval(showDice, 100);
+
+    diceRollSound();
+    side.classList.remove("result", "result-one");
     setTimeout(() => {
         clearTimeout(rollTime);
         if (dice.src.match("1.gif")) {
