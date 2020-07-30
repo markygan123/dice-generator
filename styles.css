@@ -26,6 +26,7 @@ body > * {
 h1 {
     font-size: 4em;
     color: #191923;
+    text-align: center;
 }
 
 .side {
