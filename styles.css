@@ -79,3 +79,14 @@ img {
 button {
     transition: 0.3s all ease;
 }
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 3.3em;
+        margin-top: 8rem;
+    }
+
+    body > * {
+        margin-bottom: 80px;
+    }
+}
