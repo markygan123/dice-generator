@@ -87,6 +87,11 @@ button {
     }
 
     body > * {
-        margin-bottom: 80px;
+        margin-bottom: 70px;
+    }
+
+    button {
+        font-size: 40px;
+        padding: 15px 20px;
     }
 }
