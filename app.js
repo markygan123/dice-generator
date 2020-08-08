@@ -25,7 +25,7 @@ let rollDice = btn.addEventListener("click", () => {
     side.classList.remove("result", "result-one");
     diceRollSound();
     setTimeout(() => {
-        clearTimeout(rollTime);
+        clearInterval(rollTime);
         if (dice.src.match("1.gif")) {
             dice.src = "images/1-result.jpg";
             side.classList.toggle("result-one");
